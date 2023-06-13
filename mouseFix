@@ -1,0 +1,6 @@
+#!/bin/bash
+eventFileFirst=`udevadm info --query=property --property=DEVNAME --value /dev/input/by-id/usb-COMPANY_USB_Device-if01-event-mouse`
+eventNumber=`echo "$eventFileFirst" | sed 's/\/dev\/input\/event//'`
+eventNumber=$(($eventNumber+2))
+eventFileSecond="/dev/input/event$eventNumber"
+sudo evsieve --input $eventFileFirst grab --input $eventFileSecond grab --output

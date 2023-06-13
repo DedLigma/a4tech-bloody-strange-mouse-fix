@@ -1,0 +1,15 @@
+[Unit]
+Description=Fix mouse movement issue
+
+[Service]
+Type=forking
+ExecStart=/home/dedligma/Documents/mouseFix/mouseFix
+TimeoutSec=0
+StandardOutput=tty
+RemainAfterExit=yes
+# Restart=on-failure
+# RestartSec=12s
+
+
+[Install]
+WantedBy=multi-user.target

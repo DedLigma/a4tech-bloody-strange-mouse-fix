@@ -1,4 +1,4 @@
-## a4tech bloody mouse fix for linux
+## a4tech bloody strange behavior mouse fix for linux
 
 ## About
 This fix is designed to eliminate the strange behavior of the mouse when it behaves like a gamepad (the mouse has dead zones like a gamepad stick).

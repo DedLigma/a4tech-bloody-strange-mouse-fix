@@ -1,14 +1,16 @@
 [Unit]
 Description=Fix mouse movement issue
+After=pci-0000:00:14.0-usb-0:3:1.1-event-mouse.device
+
 
 [Service]
+Restart=on-failure
+RestartSec=8s
 Type=forking
 ExecStart=/home/dedligma/Documents/mouseFix/mouseFix
 TimeoutSec=0
 StandardOutput=tty
 RemainAfterExit=yes
-# Restart=on-failure
-# RestartSec=12s
 
 
 [Install]

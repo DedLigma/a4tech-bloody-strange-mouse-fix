@@ -3,4 +3,4 @@ eventFileFirst=`udevadm info --query=property --property=DEVNAME --value /dev/in
 eventNumber=`echo "$eventFileFirst" | sed 's/\/dev\/input\/event//'`
 eventNumber=$(($eventNumber+2))
 eventFileSecond="/dev/input/event$eventNumber"
-sudo evsieve --input $eventFileFirst grab --input $eventFileSecond grab --output
+evsieve --input $eventFileFirst grab --input $eventFileSecond grab --output

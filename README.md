@@ -1,4 +1,10 @@
-## a4tech bloody strange behavior mouse fix for linux
+# a4tech bloody strange behavior mouse fix for linux
+
+Inspired by this solution - [link to paper](https://benyaamin.com/post/mouse-movement-issue-on-linux/).
+
+Link to [paper](https://benyaamin.com/post/a-better-approach-to-handling-mouse-movement-issues-on-linux/) and [github-repo](https://github.com/ItsBenyaamin/linux_mouse_fix) with new solution.
+
+### Thank you [Benyaamin](https://github.com/ItsBenyaamin)!!!
 
 ## About
 This fix is designed to eliminate the strange behavior of the mouse when it behaves like a gamepad (the mouse has dead zones like a gamepad stick).
